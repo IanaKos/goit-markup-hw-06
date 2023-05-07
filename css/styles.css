@@ -644,3 +644,68 @@ nav {
   color: #2e2f42;
   transition: fill var(--transition);
 }
+/* Subscribe form */
+.sub-form-block {
+  margin-left: 80px;
+}
+.sub-form {
+  display: flex;
+}
+.sub-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+  background: var(--navy-blue);
+}
+.sub-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  margin-left: 24px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sub-button:hover,
+.sub-button:focus {
+  background: #404bbf;
+}
+.sub-form-icon {
+  width: 24px;
+  height: 20px;
+  fill: var(--white);
+}
+.sub-form-input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  opacity: 1;
+}
+.subscribe-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  padding-bottom: 24px;
+}
