@@ -609,7 +609,6 @@ nav {
 .modal {
   position: absolute;
   width: 408px;
-  min-height: 576px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -652,9 +651,7 @@ nav {
 
 .modal-title {
   display: block;
-  font-size: 16px;
   text-align: center;
-  margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -663,6 +660,24 @@ nav {
   color: var(--navy-blue);
 }
 .modal-form-field {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
+.modal-label-text {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.modal-comment-field {
   display: block;
   margin-bottom: 4px;
   font-weight: 400;
@@ -684,9 +699,9 @@ nav {
   border-radius: 4px;
   transition: border var(--transition);
   padding: 0 38px;
+  outline: none;
 }
 .modal-form-input:focus {
-  outline-color: var(--iris);
   border-color: var(--iris);
 }
 .form-input-icon {
@@ -729,7 +744,6 @@ nav {
 .modal-form-agreement {
   display: flex;
   align-items: center;
-  margin-top: 16px;
   margin-bottom: 24px;
 }
 .modal-form-agreement a {
@@ -793,7 +807,7 @@ nav {
 
 /* Subscribe form */
 .sub-form-block {
-  margin-left: 80px;
+  margin-left: auto;
 }
 .sub-form {
   display: flex;
@@ -810,9 +824,15 @@ nav {
 }
 .sub-button {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   padding: 8px 24px;
   gap: 16px;
 
@@ -847,12 +867,10 @@ nav {
   opacity: 1;
 }
 .subscribe-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-bottom: 24px;
+  margin-bottom: 16px;
 }
